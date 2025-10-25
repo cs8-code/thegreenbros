@@ -4,25 +4,25 @@ import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
 const testimonials = [
   {
-    name: "Familie Schmidt",
-    role: "Privatkunde",
-    content: "TheGreenBros hat unseren verwilderten Garten in ein wahres Paradies verwandelt. Die Arbeit war professionell, pünktlich und das Ergebnis übertrifft unsere Erwartungen!",
+    name: "Michael Berg",
+    role: "Facility Manager, ALDI Süd",
+    content: "TheGreenBros pflegt seit Jahren zuverlässig unsere Filialgrünflächen. Hervorragende Qualität, pünktliche Ausführung und professionelle Kommunikation. Ein Partner, auf den man sich verlassen kann!",
     rating: 5,
-    initials: "FS",
+    initials: "MB",
   },
   {
-    name: "Thomas Müller",
-    role: "Geschäftsführer, TechPark GmbH",
-    content: "Seit 3 Jahren pflegt TheGreenBros unsere Firmengrünflächen. Zuverlässig, kompetent und immer freundlich. Absolute Empfehlung für gewerbliche Kunden!",
+    name: "Sarah Hoffmann",
+    role: "Geschäftsführerin, Kivberg GmbH",
+    content: "Für unsere Firmengelände setzen wir ausschließlich auf TheGreenBros. Die Kompetenz bei Großprojekten und die durchgehend hohe Servicequalität überzeugen uns seit Jahren!",
     rating: 5,
-    initials: "TM",
+    initials: "SH",
   },
   {
-    name: "Andrea Weber",
-    role: "Hausbesitzerin",
-    content: "Der neue Terrassenbau hat unser Haus komplett aufgewertet. Die Beratung war ausgezeichnet und die Handwerkskunst ist erstklassig. Vielen Dank!",
+    name: "Dr. Klaus Meier",
+    role: "Leiter Objektbetreuung, Essener Gartenbau",
+    content: "Als langjähriger Partner schätzen wir die Flexibilität und das Fachwissen von TheGreenBros. Besonders bei anspruchsvollen Pflasterarbeiten und Baumpflege sind sie unser erster Ansprechpartner.",
     rating: 5,
-    initials: "AW",
+    initials: "KM",
   },
 ];
 

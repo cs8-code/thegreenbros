@@ -12,13 +12,14 @@ export default function AboutSection() {
             </h2>
             <p className="text-base md:text-lg text-foreground leading-relaxed mb-6">
               Bei TheGreenBros verbinden wir Leidenschaft für die Natur mit jahrelanger Expertise. 
-              Seit über 10 Jahren gestalten und pflegen wir Gärten und Außenanlagen mit höchster 
-              Sorgfalt und Professionalität.
+              Seit über 10 Jahren sind wir der bevorzugte Partner für <strong>gewerbliche Großkunden</strong> 
+              und gestalten sowie pflegen Außenanlagen mit höchster Sorgfalt und Professionalität.
             </p>
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-8">
-              Unser Anspruch ist es, jeden Garten in eine grüne Oase zu verwandeln – ob für 
-              Privatkunden oder gewerbliche Auftraggeber. Nachhaltigkeit, Zuverlässigkeit und 
-              erstklassige Handwerkskunst stehen dabei immer im Mittelpunkt.
+              Führende Unternehmen wie ALDI Süd, Kivberg GmbH und Essener Gartenbau vertrauen auf 
+              unsere Zuverlässigkeit und erstklassige Handwerkskunst. Von der regelmäßigen 
+              Grünflächenpflege bis zu umfangreichen Landschaftsbauprojekten – wir sind Ihr 
+              professioneller Partner für alle Außenanlagen.
             </p>
             
             <div className="grid sm:grid-cols-3 gap-6">

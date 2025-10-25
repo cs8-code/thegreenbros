@@ -25,7 +25,7 @@ export default function HeroSection() {
           TheGreenBros
         </h1>
         <p className="text-xl md:text-2xl lg:text-3xl mb-8 max-w-4xl mx-auto leading-relaxed font-light">
-          Dein Garten- und Landschaftspfleger mit über 10 Jahren Berufserfahrung im privaten und gewerblichen Kundensektor!
+          Ihr professioneller Partner für gewerbliche Grünflächenpflege mit über 10 Jahren Erfahrung – vertraut von Großkunden deutschlandweit!
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-12">
