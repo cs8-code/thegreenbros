@@ -1,4 +1,4 @@
-import { Leaf, TreeDeciduous, Scissors, Square, Axe } from "lucide-react";
+import { Leaf, TreeDeciduous, Scissors, Square, Axe, Snowflake } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const services = [
@@ -26,6 +26,11 @@ const services = [
     icon: Axe,
     title: "Freischneiden",
     description: "Beseitigung von Wildwuchs und Gestrüpp – für freie Flächen und gepflegte Grundstücke.",
+  },
+  {
+    icon: Snowflake,
+    title: "Winterdienst",
+    description: "Zuverlässiger Schneeräumdienst und Streudienst – für sichere Wege und Zufahrten im Winter.",
   },
 ];
 
