@@ -1,36 +1,31 @@
-import { Sprout, Trees, Scissors, TreeDeciduous, Fence, Sun } from "lucide-react";
+import { Leaf, TreeDeciduous, Scissors, Square, Axe } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const services = [
   {
-    icon: Sprout,
-    title: "Gartenpflege",
-    description: "Professionelle Pflege Ihres Gartens mit Liebe zum Detail – von Unkrautentfernung bis zur Beetpflege.",
-  },
-  {
-    icon: Trees,
-    title: "Landschaftsbau",
-    description: "Individuelle Gartengestaltung und Landschaftsbau nach Ihren Wünschen – von der Planung bis zur Umsetzung.",
-  },
-  {
-    icon: Scissors,
-    title: "Rasenpflege",
-    description: "Mähen, Vertikutieren, Düngen – für einen gesunden, grünen Rasen das ganze Jahr über.",
+    icon: Leaf,
+    title: "Laubentsorgung",
+    description: "Professionelle Entfernung und fachgerechte Entsorgung von Laub – für einen sauberen Garten im Herbst.",
   },
   {
     icon: TreeDeciduous,
-    title: "Baumpflege",
-    description: "Fachgerechter Baumschnitt und Baumpflege für gesunde und sichere Bäume auf Ihrem Grundstück.",
+    title: "Baumpflege und Baumfällung",
+    description: "Fachgerechter Baumschnitt, Kronenpflege und sichere Baumfällung durch erfahrene Spezialisten.",
   },
   {
-    icon: Fence,
-    title: "Terrassenbau",
-    description: "Hochwertige Terrassen aus Holz, Stein oder WPC – Ihr neuer Lieblingsplatz im Freien.",
+    icon: Scissors,
+    title: "Grünschnitt und Grünpflegeanlagen",
+    description: "Regelmäßige Pflege und professioneller Schnitt von Hecken, Sträuchern und Grünanlagen.",
   },
   {
-    icon: Sun,
-    title: "Saisonale Arbeiten",
-    description: "Herbstlaub, Winterdienst, Frühjahrsputz – wir kümmern uns um Ihren Garten zu jeder Jahreszeit.",
+    icon: Square,
+    title: "Pflasterarbeiten",
+    description: "Hochwertige Pflasterarbeiten für Einfahrten, Wege und Terrassen – langlebig und ästhetisch.",
+  },
+  {
+    icon: Axe,
+    title: "Freischneiden",
+    description: "Beseitigung von Wildwuchs und Gestrüpp – für freie Flächen und gepflegte Grundstücke.",
   },
 ];
 
