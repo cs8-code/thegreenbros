@@ -20,18 +20,36 @@ export default function ContactSection() {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // TODO: remove mock functionality - connect to backend API
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    console.log("Form submitted:", formData);
-    
-    toast({
-      title: "Anfrage gesendet!",
-      description: "Vielen Dank! Wir melden uns in Kürze bei Ihnen.",
-    });
-    
-    setFormData({ name: "", email: "", phone: "", message: "" });
-    setIsSubmitting(false);
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok && data.success) {
+        toast({
+          title: "Anfrage gesendet!",
+          description: "Vielen Dank! Wir melden uns in Kürze bei Ihnen.",
+        });
+        setFormData({ name: "", email: "", phone: "", message: "" });
+      } else {
+        throw new Error(data.error || "Fehler beim Senden");
+      }
+    } catch (error) {
+      toast({
+        title: "Fehler",
+        description: "Die Anfrage konnte nicht gesendet werden. Bitte versuchen Sie es erneut.",
+        variant: "destructive",
+      });
+      console.error("Error submitting form:", error);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
