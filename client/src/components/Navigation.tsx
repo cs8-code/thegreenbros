@@ -32,17 +32,17 @@ export default function Navigation() {
 
   return (
     <>
-      <nav 
+      <nav
         className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
-          isScrolled 
-            ? "bg-background/95 backdrop-blur-lg border-b border-border shadow-sm" 
+          isScrolled
+            ? "bg-background/95 backdrop-blur-lg border-b border-border shadow-sm"
             : "bg-transparent"
         }`}
       >
         <div className="max-w-6xl mx-auto px-4 md:px-8">
           <div className="flex items-center justify-between h-16 md:h-20">
-            <a 
-              href="#home" 
+            <a
+              href="#home"
               onClick={(e) => {
                 e.preventDefault();
                 scrollToSection("#home");
@@ -54,7 +54,7 @@ export default function Navigation() {
             >
               TheGreenBros
             </a>
-            
+
             <div className="hidden lg:flex items-center gap-8">
               {navLinks.map((link) => (
                 <a
@@ -73,27 +73,37 @@ export default function Navigation() {
                 </a>
               ))}
             </div>
-            
+
             <div className="hidden lg:flex items-center gap-3">
               <Button
                 variant="outline"
                 size="icon"
-                onClick={() => window.open("https://wa.me/491234567890", "_blank")}
-                className={isScrolled ? "" : "bg-white/10 border-white/30 text-white hover:bg-white/20"}
+                onClick={() =>
+                  window.open("https://wa.me/491234567890", "_blank")
+                }
+                className={
+                  isScrolled
+                    ? ""
+                    : "bg-white/10 border-white/30 text-white hover:bg-white/20"
+                }
                 data-testid="button-whatsapp"
               >
                 <SiWhatsapp className="h-5 w-5" />
               </Button>
               <Button
                 onClick={() => scrollToSection("#kontakt")}
-                className={isScrolled ? "" : "bg-primary hover:bg-primary text-primary-foreground"}
+                className={
+                  isScrolled
+                    ? ""
+                    : "bg-primary hover:bg-primary text-primary-foreground"
+                }
                 data-testid="button-cta-nav"
               >
                 <Phone className="mr-2 h-4 w-4" />
                 Angebot anfordern
               </Button>
             </div>
-            
+
             <Button
               variant="ghost"
               size="icon"
@@ -101,7 +111,11 @@ export default function Navigation() {
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               data-testid="button-menu-toggle"
             >
-              {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isMobileMenuOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
             </Button>
           </div>
         </div>
@@ -129,17 +143,14 @@ export default function Navigation() {
                 variant="outline"
                 size="lg"
                 onClick={() => {
-                  window.open("https://wa.me/491234567890", "_blank");
+                  window.open("https://wa.me/4915774881745", "_blank");
                   setIsMobileMenuOpen(false);
                 }}
               >
                 <SiWhatsapp className="mr-2 h-5 w-5" />
                 WhatsApp
               </Button>
-              <Button
-                size="lg"
-                onClick={() => scrollToSection("#kontakt")}
-              >
+              <Button size="lg" onClick={() => scrollToSection("#kontakt")}>
                 Angebot anfordern
               </Button>
             </div>

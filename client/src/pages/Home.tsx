@@ -21,7 +21,6 @@ export default function Home() {
       <TestimonialsSection />
       <ContactSection />
       <Footer />
-      <StickyCtaButton />
     </div>
   );
 }
